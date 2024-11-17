@@ -1,0 +1,30 @@
+# Terraform 상태 파일
+terraform.tfstate
+terraform.tfstate.backup
+
+# Terraform 상태 파일 잠금 및 충돌 방지
+.terraform.lock.hcl
+
+# Terraform 실행 디렉토리
+.terraform/
+
+# 변수 파일 (민감한 정보가 저장될 가능성 있음)
+*.tfvars
+*.tfvars.json
+
+# 플랜 파일
+terraform.tfplan
+
+# 로그 및 출력 파일
+crash.log
+*.log
+
+# 환경별 변수 파일
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# 개인 메모 또는 기타 비공식 파일
+*.backup
+*.tmp

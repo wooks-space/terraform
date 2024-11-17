@@ -32,8 +32,13 @@ module "eks" {
       max_size       = 5 # 최대 노드 수
       desired_size   = 2 # 기본 노드 수
     }
+    sesac-univ-nodes2 = {
+      instance_types = ["t3.medium"] # 워커 노드 인스턴스 타입
+      min_size       = 1 # 최소 노드 수
+      max_size       = 3 # 최대 노드 수
+      desired_size   = 1 # 기본 노드 수
+    }
   }
-
   # Istio 관련 포트를 위한 보안 그룹 규칙 추가
   node_security_group_additional_rules = {
     ingress_15017 = {
